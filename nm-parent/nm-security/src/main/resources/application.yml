@@ -1,0 +1,106 @@
+server:
+  port: 8019
+  
+  
+spring:  
+  datasource:
+    url: jdbc:mysql://localhost:3306/nmapplication?autoReconnect=true&useSSL=false
+    data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    username: nmapplication
+    password: nmapplication    
+    hikari:      
+      connection-test-query: select now()
+      pool-name: springHikariCP  
+  jackson:
+    default-property-inclusion: non-null
+  
+logging:
+  file:     
+    name: D:/nmapp/nm-security/nm-security.log    
+    max-history: 10        
+  #pattern:
+    #console: "%d %-5level %logger : %msg%n"
+    #file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    com.nmsecurity: TRACE
+    org.springframework.web: TRACE
+    org.springframework.security: TRACE
+    org.keycloak.adapters: trace
+    
+keycloak:
+  realm: nmapp
+  auth-server-url: http://localhost:8020/auth
+  bearer-only: true
+  resource: nm-security  
+  credentials:
+    secret: 52c7a6fc-2f03-4e5f-b334-ac2efd063790  
+  security-constraints:
+    - 
+      authRoles:
+        - SUPER-ADMIN
+        - DISTRICT
+        - MANDALAM
+        - PANCHAYATH
+        - MUNICIPALITY
+        - WARD-INCHARGE              
+      securityCollections:          
+        - 
+          name: user-creation-api
+          patterns: 
+            - /nm/create-user
+            - /nm/check-username-availability
+            - /nm/check-mobile-number-availability
+
+config:
+  key: PleaseKeyItSecret
+  app-version: 1.0
+  app-name: NMAPP
+  
+sms-api:
+  base-uri: http://thesmsbuddy.com/api/v1/sms/send
+  api-key:  WixiJ1LMzzPsIK0cjSOLM9gbFBzcmW7b
+  type: 1
+  sender-id: INFSMS
+  flash: 0
+  
+master-realm-keyCloak:
+  realm: master
+  name: nm-security-master
+  secret: 1363cdc1-1f58-4410-ba2d-43ee4a1fe337
+  user: nm-admin
+  pass: nmpass
+#Error and content message for config api     
+config-details:
+  cash-transaction:
+    1: Cash
+    2: GooglePay
+  role-list:
+    1: SUPER-ADMIN
+    2: DISTRICT
+    3: MANDALAM
+    4: PANCHAYATH
+    5: MUNICIPALITY
+    6: WARD-INCHARGE
+    7: MEMBER
+  role-grant-level:
+     SUPER-ADMIN:  DISTRICT,MANDALAM,PANCHAYATH,MUNICIPALITY,WARD-INCHARGE,MEMBER
+     DISTRICT: MANDALAM,PANCHAYATH,MUNICIPALITY,WARD-INCHARGE,MEMBER
+     MANDALAM: PANCHAYATH,MUNICIPALITY,WARD-INCHARGE,MEMBER
+     PANCHAYATH: WARD-INCHARGE,MEMBER
+     MUNICIPALITY: WARD-INCHARGE,MEMBER
+     WARD-INCHARGE: MEMBER
+  district:
+    - Kottayam
+  state:
+    - Kerala
+  #MEMBER - No rights to create user     
+  error-code:
+    ER-001: Campaign name already exist
+    ER-002: Short name already exist
+    ER-003: Please enter campaign details
+    ER_004: User not available
+    ER_409: Invalid Email
+  content-message:
+    C-01: Mobile number already exist
+    C-02: Username already exist
+    C-03: Invalid Username  

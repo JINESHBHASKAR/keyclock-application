@@ -1,0 +1,21 @@
+spring:  
+  datasource:
+    url: jdbc:mysql://localhost:3306/nmapplicationTest?autoReconnect=true&useSSL=false
+    data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    username: nmapplicationTest
+    password: nmapplicationTest    
+    hikari:      
+      connection-test-query: select now()
+      pool-name: springHikariCP  
+  jackson:
+    default-property-inclusion: non-null
+  
+logging:
+  file:     
+    name: /usr/src/NMAPP/nm-usermanagement/nm-usermanagement.log    
+    max-history: 10        
+  #pattern:
+    #console: "%d %-5level %logger : %msg%n"
+    #file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: trace

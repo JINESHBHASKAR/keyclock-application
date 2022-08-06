@@ -1,0 +1,32 @@
+server:
+  port: 8020
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/keycloak?autoReconnect=true&useSSL=false
+    username: keycloak-user
+    password: keycloak    
+    hikari:      
+      connection-test-query: select now()
+      pool-name: springHikariCP
+      
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: nm-admin
+      password: nmpass
+    realmImportFile: nmapp-realm.json
+    
+    
+logging:
+  file:     
+    name: D:/nmapp/nm-auth-server/nm-auth.log    
+    max-history: 10        
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    com.nmsecurity: TRACE
+    org.springframework.web: TRACE
+    org.springframework.security: TRACE

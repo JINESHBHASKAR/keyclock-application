@@ -1,0 +1,45 @@
+server:
+  port: 8023
+
+spring:  
+  datasource:
+    url: jdbc:mysql://localhost:3306/nmapplication?autoReconnect=true&useSSL=false
+    data-source-class-name: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    username: nmapplication
+    password: nmapplication    
+    hikari:      
+      connection-test-query: select now()
+      pool-name: springHikariCP  
+  jackson:
+    default-property-inclusion: non-null
+          
+logging:
+  file:     
+    name: D:/nmapp/nm-usermanagement/nm-usermanagement.log    
+    max-history: 10        
+  #pattern:
+    #console: "%d %-5level %logger : %msg%n"
+    #file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    org.springframework.web: trace
+    
+keycloak:
+  realm: nmapp
+  auth-server-url: http://localhost:8020/auth
+  bearer-only: true
+  resource: nm-security
+  security-constraints:
+    - 
+      authRoles:
+        - SUPER-ADMIN
+        - DISTRICT
+        - MANDALAM
+        - PANCHAYATH
+        - MUNICIPALITY
+        - WARD-INCHARGE
+        - MEMBER
+      securityCollections:          
+        - 
+          name: usermanagement-api
+          patterns: 
+            - /user-management/*
