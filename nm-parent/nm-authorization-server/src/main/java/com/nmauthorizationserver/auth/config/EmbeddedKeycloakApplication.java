@@ -17,6 +17,13 @@ import org.springframework.core.io.Resource;
 
 import com.nmauthorizationserver.auth.config.KeycloakServerProperties.AdminUser;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
+
 public class EmbeddedKeycloakApplication extends KeycloakApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(EmbeddedKeycloakApplication.class);

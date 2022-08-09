@@ -13,6 +13,12 @@ import org.springframework.context.annotation.Bean;
 
 import com.nmauthorizationserver.auth.config.KeycloakServerProperties;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @SpringBootApplication(exclude = LiquibaseAutoConfiguration.class)
 @EnableConfigurationProperties({ KeycloakServerProperties.class })
 public class NmAuthorizationServerApplication {
