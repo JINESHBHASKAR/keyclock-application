@@ -20,6 +20,12 @@ import com.nmusermanagement.vo.CommonUserResponseVo;
 import com.nmusermanagement.vo.UserProfileDetailsVo;
 import com.nmusermanagement.vo.WardDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Service
 @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
 public class UserProfileManagementService {

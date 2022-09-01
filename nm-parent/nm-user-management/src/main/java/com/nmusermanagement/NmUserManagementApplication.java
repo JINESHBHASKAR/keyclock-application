@@ -4,6 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.nmusermanagement"})
 public class NmUserManagementApplication {

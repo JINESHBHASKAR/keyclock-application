@@ -14,6 +14,12 @@ import com.nmusermanagement.vo.CommonRequestVo;
 import com.nmusermanagement.vo.UserProfileDetailsVo;
 import com.nmusermanagement.vo.WardDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Mapper
 public interface UserProfileManagementMapper {
 	
