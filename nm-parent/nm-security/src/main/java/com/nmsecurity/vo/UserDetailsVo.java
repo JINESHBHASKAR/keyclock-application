@@ -2,6 +2,12 @@ package com.nmsecurity.vo;
 
 import java.util.List;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class UserDetailsVo extends StatusVo{
 
 	private static final long serialVersionUID = 402168537149642873L;	

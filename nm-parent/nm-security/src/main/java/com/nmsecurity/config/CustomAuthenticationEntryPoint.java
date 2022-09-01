@@ -15,6 +15,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nmcommon.constants.AppConstants;
 import com.nmcommon.vo.ErrorResponse;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Component
 public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint{	
 	

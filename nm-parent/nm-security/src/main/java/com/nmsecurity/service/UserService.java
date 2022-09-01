@@ -17,6 +17,12 @@ import com.nmsecurity.mapper.UserDetailsMapper;
 import com.nmsecurity.model.UserCredentials;
 import com.nmsecurity.vo.UserDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Service
 @Transactional(propagation = Propagation.REQUIRED, rollbackFor = Throwable.class)
 public class UserService {

@@ -7,6 +7,13 @@ import java.util.Map;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
+
 @Configuration
 @ConfigurationProperties(prefix = "config-details")
 public class AppConfig implements Serializable {

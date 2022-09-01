@@ -5,6 +5,12 @@ import java.util.Map;
 
 import com.nmsecurity.model.StatusVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class ConfigVo extends StatusVo{
 
 	private static final long serialVersionUID = -662127501981043717L;

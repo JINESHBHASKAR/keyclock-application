@@ -22,6 +22,12 @@ import com.nmsecurity.vo.ConfigVo;
 import com.nmsecurity.vo.ResponseVo;
 import com.nmsecurity.vo.UserDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @RestController
 @RequestMapping("/nm")
 public class KeyCloakController {

@@ -13,6 +13,12 @@ import org.springframework.web.reactive.function.client.WebClientException;
 
 import com.nmsecurity.vo.UserDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Component
 public class CommonUtil {
 	private final static Logger log = LoggerFactory.getLogger(CommonUtil.class);
