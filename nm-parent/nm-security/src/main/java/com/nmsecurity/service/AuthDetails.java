@@ -9,6 +9,12 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.nmsecurity.model.AuthRequest;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class AuthDetails implements UserDetails{
 
 	private static final long serialVersionUID = 9216668572855249766L;			

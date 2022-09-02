@@ -2,6 +2,12 @@ package com.nmsecurity.model;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class UserCredentials implements Serializable {
 
 	private static final long serialVersionUID = -6224784402770718231L;	

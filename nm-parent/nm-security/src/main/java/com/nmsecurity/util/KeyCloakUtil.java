@@ -25,6 +25,12 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import com.nmsecurity.config.AppConfig;
 import com.nmsecurity.vo.UserDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Component
 public class KeyCloakUtil {
 	private final static Logger log = LoggerFactory.getLogger(KeyCloakUtil.class);

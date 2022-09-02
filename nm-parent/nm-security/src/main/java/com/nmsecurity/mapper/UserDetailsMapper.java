@@ -15,6 +15,12 @@ import com.nmsecurity.model.UserCredentials;
 import com.nmsecurity.vo.ConfigVo;
 import com.nmsecurity.vo.UserDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Mapper
 public interface UserDetailsMapper {
 

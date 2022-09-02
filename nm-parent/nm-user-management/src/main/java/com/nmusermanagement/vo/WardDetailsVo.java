@@ -2,6 +2,12 @@ package com.nmusermanagement.vo;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class WardDetailsVo implements Serializable{
 
 	private static final long serialVersionUID = -5923427917652894680L;

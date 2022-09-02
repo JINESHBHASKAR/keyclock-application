@@ -24,6 +24,13 @@ import com.nmsecurity.vo.ConfigVo;
 import com.nmsecurity.vo.ResponseVo;
 import com.nmsecurity.vo.UserDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
+
 @Component
 public class KeyCloakBusiness {
 	private static final Logger log = LoggerFactory.getLogger(KeyCloakBusiness.class);

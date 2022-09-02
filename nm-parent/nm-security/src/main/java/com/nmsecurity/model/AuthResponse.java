@@ -4,6 +4,12 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class AuthResponse extends StatusVo implements Serializable{
 
 	private static final long serialVersionUID = 6050165978288955998L;	

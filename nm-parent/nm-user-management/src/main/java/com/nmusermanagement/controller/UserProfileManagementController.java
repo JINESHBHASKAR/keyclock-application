@@ -14,6 +14,11 @@ import com.nmusermanagement.business.UserProfileManagementBusiness;
 import com.nmusermanagement.vo.CommonUserResponseVo;
 import com.nmusermanagement.vo.UserProfileDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
 
 @RestController
 @RequestMapping(path = "/user-management")

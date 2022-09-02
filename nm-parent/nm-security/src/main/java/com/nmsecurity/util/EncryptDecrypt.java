@@ -16,6 +16,12 @@ import javax.crypto.spec.SecretKeySpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class EncryptDecrypt {
 	private final static Logger log = LoggerFactory.getLogger(EncryptDecrypt.class);
 	

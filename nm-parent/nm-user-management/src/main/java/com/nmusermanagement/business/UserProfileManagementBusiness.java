@@ -16,6 +16,12 @@ import com.nmusermanagement.vo.CommonUserResponseVo;
 import com.nmusermanagement.vo.UserProfileDetailsVo;
 import com.nmusermanagement.vo.WardDetailsVo;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Component
 public class UserProfileManagementBusiness {
 	private static final Logger log = LoggerFactory.getLogger(UserProfileManagementBusiness.class);

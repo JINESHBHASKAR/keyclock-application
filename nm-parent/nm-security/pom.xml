@@ -116,6 +116,13 @@
 				</configuration>
 			</plugin>
             <plugin>
+            <configuration>
+					<image>
+						<name>${project.name}/${project.artifactId}</name>
+						<publish>true</publish>
+					</image>
+
+				</configuration>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>                
                 <executions>

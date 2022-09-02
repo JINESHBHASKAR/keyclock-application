@@ -4,6 +4,12 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class ResponseVo extends StatusVo{
 
 	private static final long serialVersionUID = -2901974985787429958L;

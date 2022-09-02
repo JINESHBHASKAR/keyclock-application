@@ -7,6 +7,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @Configuration
 public class WebClientConfig {
 	private static final Logger log = LoggerFactory.getLogger(WebClientConfig.class);

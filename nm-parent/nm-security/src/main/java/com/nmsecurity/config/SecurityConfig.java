@@ -19,6 +19,12 @@ import org.springframework.security.web.authentication.logout.LogoutFilter;
 import org.springframework.security.web.authentication.session.NullAuthenticatedSessionStrategy;
 import org.springframework.security.web.authentication.session.SessionAuthenticationStrategy;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @EnableWebSecurity
 public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter{
 	private static final Logger log = LoggerFactory.getLogger(SecurityConfig.class);

@@ -3,6 +3,12 @@ package com.nmusermanagement.vo;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class UserProfileDetailsVo implements Serializable{
 
 	private static final long serialVersionUID = 4069998129916207288L;

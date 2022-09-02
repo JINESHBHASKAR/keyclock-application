@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nmcommon.exception.BusinessException;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 @RestController
 public class AuthController {
 	private final static Logger log = LoggerFactory.getLogger(AuthController.class);

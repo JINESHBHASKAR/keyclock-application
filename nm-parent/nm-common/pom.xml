@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -11,34 +12,41 @@
 	<artifactId>nm-common</artifactId>
 	<version>0.1</version>
 	<name>nm-common</name>
-	<description>common logics</description>	
+	<description>common logics</description>
 	<packaging>jar</packaging>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
 		<dependency>
-	    	<groupId>org.springframework</groupId>
-	    	<artifactId>spring-context-support</artifactId>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.ehcache/ehcache -->
 		<dependency>
-	    	<groupId>org.ehcache</groupId>
-	    	<artifactId>ehcache</artifactId>	    
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
 		</dependency>
 	</dependencies>
 	<build>
-		<plugins>			
+		<plugins>
 			<plugin>
+				<configuration>
+					<image>
+						<name>${project.name}/${project.artifactId}</name>
+						<publish>true</publish>
+					</image>
+
+				</configuration>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<executions>
-                	<execution>
-                    	<id>repackage</id>
-                    	<configuration>
-  							<classifier>exec</classifier>
-  						</configuration>
-                </execution>
-            	</executions>
-			</plugin>			
+					<execution>
+						<id>repackage</id>
+						<configuration>
+							<classifier>exec</classifier>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

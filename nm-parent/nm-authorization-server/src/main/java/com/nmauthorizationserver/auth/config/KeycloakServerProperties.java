@@ -2,6 +2,13 @@ package com.nmauthorizationserver.auth.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+/**
+ * 
+ * @author Jinesh KP
+ * 
+ */
+
+
 @ConfigurationProperties(prefix = "keycloak.server")
 public class KeycloakServerProperties {
 

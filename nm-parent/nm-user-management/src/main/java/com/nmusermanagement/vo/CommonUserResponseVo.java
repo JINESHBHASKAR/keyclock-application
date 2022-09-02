@@ -2,6 +2,12 @@ package com.nmusermanagement.vo;
 
 import java.util.List;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class CommonUserResponseVo extends StatusVo {
 
 	private static final long serialVersionUID = 8502396746643590061L;

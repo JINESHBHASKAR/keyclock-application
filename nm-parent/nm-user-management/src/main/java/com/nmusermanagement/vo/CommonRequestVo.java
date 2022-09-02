@@ -2,6 +2,12 @@ package com.nmusermanagement.vo;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Jinesh KP
+ *
+ */
+
 public class CommonRequestVo implements Serializable{
 	
 	private static final long serialVersionUID = 3952476657092892846L;
