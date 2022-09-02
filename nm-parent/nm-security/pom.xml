@@ -118,9 +118,9 @@
             <plugin>
             <configuration>
 					<image>
-						<name>${project.name}/${project.artifactId}</name>
-						<publish>true</publish>
+						<name>jineshkp/${project.artifactId}:${project.version}</name>
 					</image>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 
 				</configuration>
                 <groupId>org.springframework.boot</groupId>
